@@ -40,7 +40,7 @@ It shares the same API with the PointSeries, which allows configuring the visual
 - PointShape: *enum*
 
     | PointShape    | Description                              |
-    | :-----------: | :----------------------------  --------: |
+    | :-----------: | :--------------------------------------: |
     | Rectangle     | The series with rectangle-shaped points  |
     | Triangle      | The series with triangle-shaped points.  |
     | Square        | The series with square-shaped points.    |
