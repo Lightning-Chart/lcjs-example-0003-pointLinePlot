@@ -1,4 +1,4 @@
-# Point line series
+# Point Line Series
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
@@ -14,7 +14,8 @@ The demo can be used as an example or a seed project. Local execution requires t
 
 - The application is available at *http://localhost:8080* in your browser, webpack-dev-server provides hot reload functionality.
 
-### Description
+
+## Description
 
 *Also known as a Line Series, Line Graph, Line Chart, and Line with Markers*
 
@@ -102,19 +103,20 @@ As it was mentioned before, the series accepts points in format `{ x: number, y:
         ])
     ```
 
-### API links
 
-* Color palettes: [ColorPalettes][]
-* XY cartesian chart: [ChartXY][]
-* Point-line series: [PointLineSeries][]
-* RGBA color factory: [ColorRGBA][]
-* Solid FillStyle: [SolidFill][]
-* Solid LineStyle: [SolidLine][]
-* Individual point coloring: [IndividualPointFill][]
-* Point shapes: [PointShape][]
+## API Links
+
+* Color palettes: [ColorPalettes]
+* XY cartesian chart: [ChartXY]
+* Point-line series: [PointLineSeries]
+* RGBA color factory: [ColorRGBA]
+* Solid FillStyle: [SolidFill]
+* Solid LineStyle: [SolidLine]
+* Individual point coloring: [IndividualPointFill]
+* Point shapes: [PointShape]
 
 
-### Support
+## Support
 
 If you notice an error in the example code, please open an issue on [GitHub][0] repository of the entire example.
 
@@ -126,19 +128,21 @@ If you think you found a bug in the LightningChart JavaScript library, please co
 
 Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@arction.com.
 
-© Arction Ltd 2009-2019. All rights reserved.
-
 [0]: https://github.com/Arction/
 [1]: https://www.arction.com/lightningchart-js-api-documentation/
 [2]: https://www.arction.com
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
 [4]: https://www.arction.com/support-services/
 
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/chartxy.html
-[ColorPalettes]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#colorpalettes
-[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/globals.html#colorrgba
-[IndividualPointFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/individualpointfill.html
-[PointLineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/pointlineseries.html
-[PointShape]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/enums/pointshape.html
-[SolidFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/solidfill.html
-[SolidLine]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/solidline.html
+© Arction Ltd 2009-2019. All rights reserved.
+
+
+[ColorPalettes]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#colorpalettes
+[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/chartxy.html
+[PointLineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/pointlineseries.html
+[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#colorrgba
+[SolidFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/solidfill.html
+[SolidLine]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/solidline.html
+[IndividualPointFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/individualpointfill.html
+[PointShape]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/enums/pointshape.html
+

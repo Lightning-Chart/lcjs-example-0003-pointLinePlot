@@ -1,4 +1,4 @@
-/**
+/*
  * LightningChartJS example that showcases point & line -series with different point types.
  */
 // Import LightningChartJS
