@@ -25,7 +25,7 @@ const chart = lightningChart().ChartXY()
 // Add point line series with different point styles with a few static points.
 // Combine different LineStyles, FillStyles and PointShapes.
 
-// Add line series with reactangle-shaped points.
+// Add line series with rectangle-shaped points.
 chart.addPointLineSeries()
     .setName('Sports Car')
     .setPointFillStyle(fillStyles[0])
