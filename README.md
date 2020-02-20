@@ -76,7 +76,8 @@ It shares the same API with the PointSeries, which allows configuring the visual
 
 As it was mentioned before, the series accepts points in format `{ x: number, y: number: color: Color }` with specified IndividualPointFill to enable individual point coloring or `{ x: number, y: number }` for other fill styles. Any number of points can be added with a single call similarly to line series with point markers.
 
-- Dataset without colors. If IndividualPointFill is specified, the fallback color is used. Otherwise, the specified fill style is used.
+- Dataset without colors.
+    - If IndividualPointFill is specified, the fallback color is used. Otherwise, the specified fill style is used.
 
     ```javascript
     // Dataset of Vec2 data points without color.
@@ -88,7 +89,8 @@ As it was mentioned before, the series accepts points in format `{ x: number, y:
         ])
     ```
 
-- Dataset with individual colors. If IndividualPointFill is specified, the color from data point or fallback color is used. Otherwise, the specified fill style is used.
+- Dataset with individual colors.
+    - If IndividualPointFill is specified, the color from data point or fallback color is used. Otherwise, the specified fill style is used.
 
     ```javascript
     // Dataset of Vec2Color data points with individual color.
