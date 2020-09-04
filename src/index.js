@@ -9,7 +9,8 @@ const {
     lightningChart,
     ColorPalettes,
     SolidFill,
-    PointShape
+    PointShape,
+    Themes
 } = lcjs
 
 // ----- Cache styles -----
@@ -19,7 +20,9 @@ const colors = [0, 1, 2].map(palette)
 const fillStyles = colors.map(color => new SolidFill({ color }))
 
 // Create a XY Chart.
-const chart = lightningChart().ChartXY()
+const chart = lightningChart().ChartXY({
+    // theme: Themes.dark
+})
     .setTitle('Car Mileage Comparison')
 
 // Add point line series with different point styles with a few static points.

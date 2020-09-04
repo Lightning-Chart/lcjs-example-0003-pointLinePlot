@@ -110,14 +110,14 @@ As it was mentioned before, the series accepts points in format `{ x: number, y:
 
 ## API Links
 
-* Color palettes: [ColorPalettes]
-* XY cartesian chart: [ChartXY]
-* Point-line series: [PointLineSeries]
-* RGBA color factory: [ColorRGBA]
-* Solid FillStyle: [SolidFill]
-* Solid LineStyle: [SolidLine]
-* Individual point coloring: [IndividualPointFill]
-* Point shapes: [PointShape]
+* [Color palettes]
+* [XY cartesian chart]
+* [Point-line series]
+* [RGBA color factory]
+* [Solid FillStyle]
+* [Solid LineStyle]
+* [Individual point coloring]
+* [Point shapes]
 
 
 ## Support
@@ -141,12 +141,12 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[ColorPalettes]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#colorpalettes
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/chartxy.html
-[PointLineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/pointlineseries.html
-[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#colorrgba
-[SolidFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/solidfill.html
-[SolidLine]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/solidline.html
-[IndividualPointFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/individualpointfill.html
-[PointShape]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/enums/pointshape.html
+[Color palettes]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#colorpalettes
+[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/chartxy.html
+[Point-line series]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/pointlineseries.html
+[RGBA color factory]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#colorrgba
+[Solid FillStyle]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/solidfill.html
+[Solid LineStyle]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/solidline.html
+[Individual point coloring]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/individualpointfill.html
+[Point shapes]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/enums/pointshape.html
 
