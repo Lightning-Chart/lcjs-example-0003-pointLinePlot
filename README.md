@@ -1,6 +1,6 @@
-# Point Line Series
+# JavaScript Point Line Chart
 
-![Point Line Series](pointLinePlot.png)
+![JavaScript Point Line Chart](pointLinePlot.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
