@@ -7,21 +7,15 @@ const lcjs = require('@arction/lcjs')
 // Extract required parts from LightningChartJS.
 const {
     lightningChart,
-    ColorPalettes,
-    SolidFill,
     PointShape,
     Themes
 } = lcjs
 
-// ----- Cache styles -----
 const pointSize = 10
-const palette = ColorPalettes.warm(3)
-const colors = [0, 1, 2].map(palette)
-const fillStyles = colors.map(color => new SolidFill({ color }))
 
 // Create a XY Chart.
 const chart = lightningChart().ChartXY({
-    // theme: Themes.dark
+    // theme: Themes.darkGold
 })
     .setTitle('Car Mileage Comparison')
 
@@ -31,8 +25,6 @@ const chart = lightningChart().ChartXY({
 // Add line series with rectangle-shaped points.
 chart.addPointLineSeries()
     .setName('Sports Car')
-    .setPointFillStyle(fillStyles[0])
-    .setStrokeStyle((strokeStyle) => strokeStyle.setFillStyle(fillStyles[0]))
     .setPointSize(pointSize)
     .add([
         { x: 0, y: 0 },
@@ -49,8 +41,6 @@ chart.addPointLineSeries()
 chart.addPointLineSeries({ pointShape: PointShape.Circle })
     .setName('Family Car')
     .setPointSize(pointSize)
-    .setPointFillStyle(fillStyles[1])
-    .setStrokeStyle((strokeStyle) => strokeStyle.setFillStyle(fillStyles[1]))
     .add([
         { x: 0, y: 0 },
         { x: 100, y: 10 },
@@ -66,8 +56,6 @@ chart.addPointLineSeries({ pointShape: PointShape.Circle })
 chart.addPointLineSeries({ pointShape: PointShape.Triangle })
     .setName('Pick-up Car')
     .setPointSize(pointSize)
-    .setPointFillStyle(fillStyles[2])
-    .setStrokeStyle((strokeStyle) => strokeStyle.setFillStyle(fillStyles[2]))
     .add([
         { x: 0, y: 0 },
         { x: 80, y: 10 },
@@ -91,3 +79,6 @@ chart.setAutoCursor((cursor) => cursor
     .setTickMarkerXAutoTextStyle(true)
     .setTickMarkerYAutoTextStyle(true)
 )
+
+// Add Legend Box.
+const legend = chart.addLegendBox().add(chart)
