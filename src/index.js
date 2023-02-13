@@ -5,25 +5,23 @@
 const lcjs = require('@arction/lcjs')
 
 // Extract required parts from LightningChartJS.
-const {
-    lightningChart,
-    PointShape,
-    Themes
-} = lcjs
+const { lightningChart, PointShape, Themes } = lcjs
 
 const pointSize = 10
 
 // Create a XY Chart.
-const chart = lightningChart().ChartXY({
-    // theme: Themes.darkGold
-})
+const chart = lightningChart()
+    .ChartXY({
+        // theme: Themes.darkGold
+    })
     .setTitle('Car Mileage Comparison')
 
 // Add point line series with different point styles with a few static points.
 // Combine different LineStyles, FillStyles and PointShapes.
 
 // Add line series with rectangle-shaped points.
-chart.addPointLineSeries()
+chart
+    .addPointLineSeries()
     .setName('Sports Car')
     .setPointSize(pointSize)
     .add([
@@ -34,11 +32,12 @@ chart.addPointLineSeries()
         { x: 150, y: 40 },
         { x: 180, y: 50 },
         { x: 230, y: 60 },
-        { x: 290, y: 70 }
+        { x: 290, y: 70 },
     ])
 
 // Add line series with circle-shaped points.
-chart.addPointLineSeries({ pointShape: PointShape.Circle })
+chart
+    .addPointLineSeries({ pointShape: PointShape.Circle })
     .setName('Family Car')
     .setPointSize(pointSize)
     .add([
@@ -49,11 +48,12 @@ chart.addPointLineSeries({ pointShape: PointShape.Circle })
         { x: 470, y: 40 },
         { x: 540, y: 50 },
         { x: 600, y: 60 },
-        { x: 800, y: 70 }
+        { x: 800, y: 70 },
     ])
 
 // Add line series with triangle-shaped points.
-chart.addPointLineSeries({ pointShape: PointShape.Triangle })
+chart
+    .addPointLineSeries({ pointShape: PointShape.Triangle })
     .setName('Pick-up Car')
     .setPointSize(pointSize)
     .add([
@@ -64,20 +64,14 @@ chart.addPointLineSeries({ pointShape: PointShape.Triangle })
         { x: 230, y: 40 },
         { x: 380, y: 50 },
         { x: 450, y: 60 },
-        { x: 580, y: 70 }
+        { x: 580, y: 70 },
     ])
 
 // Setup view nicely.
-chart.getDefaultAxisX()
-    .setInterval(0, 1000, false, true)
-    .setTitle('Km')
-chart.getDefaultAxisY()
-    .setInterval(0, 100, false, true)
-    .setTitle('Litre')
-chart.setAutoCursor((cursor) => cursor
-    .setResultTableAutoTextStyle(true)
-    .setTickMarkerXAutoTextStyle(true)
-    .setTickMarkerYAutoTextStyle(true)
+chart.getDefaultAxisX().setInterval({ start: 0, end: 1000 }).setTitle('Km')
+chart.getDefaultAxisY().setInterval({ start: 0, end: 100 }).setTitle('Litre')
+chart.setAutoCursor((cursor) =>
+    cursor.setResultTableAutoTextStyle(true).setTickMarkerXAutoTextStyle(true).setTickMarkerYAutoTextStyle(true),
 )
 
 // Add Legend Box.
