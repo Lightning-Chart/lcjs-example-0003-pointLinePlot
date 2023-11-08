@@ -141,12 +141,12 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[Color palettes]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/variables/ColorPalettes.html
-[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/classes/ChartXY.html
-[Point-line series]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/classes/PointLineSeries.html
-[RGBA color factory]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/functions/ColorRGBA.html
-[Solid FillStyle]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/classes/SolidFill.html
-[Solid LineStyle]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/classes/SolidLine.html
-[Individual point coloring]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/classes/IndividualPointFill.html
-[Point shapes]: https://lightningchart.com/js-charts/api-documentation/v4.2.0/enums/PointShape.html
+[Color palettes]: https://lightningchart.com/js-charts/api-documentation/v5.0.1/variables/ColorPalettes.html
+[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v5.0.1/classes/ChartXY.html
+[Point-line series]: https://lightningchart.com/js-charts/api-documentation/v5.0.1/classes/PointLineSeries.html
+[RGBA color factory]: https://lightningchart.com/js-charts/api-documentation/v5.0.1/functions/ColorRGBA.html
+[Solid FillStyle]: https://lightningchart.com/js-charts/api-documentation/v5.0.1/classes/SolidFill.html
+[Solid LineStyle]: https://lightningchart.com/js-charts/api-documentation/v5.0.1/classes/SolidLine.html
+[Individual point coloring]: https://lightningchart.com/js-charts/api-documentation/v5.0.1/classes/IndividualPointFill.html
+[Point shapes]: https://lightningchart.com/js-charts/api-documentation/v5.0.1/enums/PointShape.html
 
