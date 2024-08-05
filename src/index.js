@@ -2,7 +2,7 @@
  * LightningChartJS example that showcases point & line -series with different point types.
  */
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
 const { lightningChart, PointShape, Themes } = lcjs
@@ -17,6 +17,7 @@ const chart = lightningChart({
         theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
     .setTitle('Car Mileage Comparison')
+    .setCursorMode('show-nearest')
 
 // Add point line series with different point styles with a few static points.
 // Combine different LineStyles, FillStyles and PointShapes.
@@ -70,11 +71,8 @@ chart
     ])
 
 // Setup view nicely.
-chart.getDefaultAxisX().setInterval({ start: 0, end: 1000 }).setTitle('Km')
-chart.getDefaultAxisY().setInterval({ start: 0, end: 100 }).setTitle('Litre')
-chart.setAutoCursor((cursor) =>
-    cursor.setResultTableAutoTextStyle(true).setTickMarkerXAutoTextStyle(true).setTickMarkerYAutoTextStyle(true),
-)
+chart.axisX.setInterval({ start: 0, end: 1000 }).setTitle('Km').setUnits('km', { displayOnAxis: false })
+chart.axisY.setInterval({ start: 0, end: 100 }).setTitle('Litre').setUnits('l', { displayOnAxis: false })
 
 // Add Legend Box.
 const legend = chart.addLegendBox().add(chart)
