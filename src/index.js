@@ -5,7 +5,7 @@
 const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
-const { lightningChart, PointShape, Themes } = lcjs
+const { lightningChart, PointShape, emptyFill, Themes } = lcjs
 
 const pointSize = 10
 
@@ -24,10 +24,12 @@ const chart = lightningChart({
 
 // Add line series with rectangle-shaped points.
 chart
-    .addPointLineSeries()
-    .setName('Sports Car')
+    .addPointLineAreaSeries()
+    .setAreaFillStyle(emptyFill)
+    .setPointShape(PointShape.Square)
     .setPointSize(pointSize)
-    .add([
+    .setName('Sports Car')
+    .appendJSON([
         { x: 0, y: 0 },
         { x: 50, y: 10 },
         { x: 80, y: 20 },
@@ -40,10 +42,12 @@ chart
 
 // Add line series with circle-shaped points.
 chart
-    .addPointLineSeries({ pointShape: PointShape.Circle })
-    .setName('Family Car')
+    .addPointLineAreaSeries()
+    .setAreaFillStyle(emptyFill)
+    .setPointShape(PointShape.Circle)
     .setPointSize(pointSize)
-    .add([
+    .setName('Family Car')
+    .appendJSON([
         { x: 0, y: 0 },
         { x: 100, y: 10 },
         { x: 230, y: 20 },
@@ -56,10 +60,12 @@ chart
 
 // Add line series with triangle-shaped points.
 chart
-    .addPointLineSeries({ pointShape: PointShape.Triangle })
-    .setName('Pick-up Car')
+    .addPointLineAreaSeries()
+    .setAreaFillStyle(emptyFill)
+    .setPointShape(PointShape.Triangle)
     .setPointSize(pointSize)
-    .add([
+    .setName('Pick-up Car')
+    .appendJSON([
         { x: 0, y: 0 },
         { x: 80, y: 10 },
         { x: 100, y: 20 },
