@@ -24,8 +24,7 @@ const chart = lightningChart({
 
 // Add line series with rectangle-shaped points.
 chart
-    .addPointLineAreaSeries()
-    .setAreaFillStyle(emptyFill)
+    .addPointLineSeries()
     .setPointShape(PointShape.Square)
     .setPointSize(pointSize)
     .setName('Sports Car')
@@ -42,8 +41,7 @@ chart
 
 // Add line series with circle-shaped points.
 chart
-    .addPointLineAreaSeries()
-    .setAreaFillStyle(emptyFill)
+    .addPointLineSeries()
     .setPointShape(PointShape.Circle)
     .setPointSize(pointSize)
     .setName('Family Car')
@@ -60,8 +58,7 @@ chart
 
 // Add line series with triangle-shaped points.
 chart
-    .addPointLineAreaSeries()
-    .setAreaFillStyle(emptyFill)
+    .addPointLineSeries()
     .setPointShape(PointShape.Triangle)
     .setPointSize(pointSize)
     .setName('Pick-up Car')
@@ -79,6 +76,3 @@ chart
 // Setup view nicely.
 chart.axisX.setInterval({ start: 0, end: 1000 }).setTitle('Km').setUnits('km', { displayOnAxis: false })
 chart.axisY.setInterval({ start: 0, end: 100 }).setTitle('Litre').setUnits('l', { displayOnAxis: false })
-
-// Add Legend Box.
-const legend = chart.addLegendBox().add(chart)
